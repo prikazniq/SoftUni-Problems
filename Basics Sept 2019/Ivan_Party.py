@@ -1,0 +1,10 @@
+whiskey_price = float(input())
+beer = float(input())
+wine = float(input())
+rakia = float(input())
+whiskey = float(input())
+rakia_price = whiskey_price / 2
+wine_price = rakia_price - (rakia_price * 0.4)
+beer_price = rakia_price - (rakia_price * 0.8)
+sum = (wine * wine_price) + (beer * beer_price) + (whiskey * whiskey_price) + (rakia_price * rakia)
+print(f"{sum:.2f}")
